@@ -254,6 +254,7 @@ export { getTodos, getTodo, putTodo, deleteTodo, patchTodo };
 import axios from "axios";
 
 const photoUrl = "https://jsonplaceholder.typicode.com/photos";
+
 const getPhotos = async () => {
   try {
     const res = axios.get(photoUrl);

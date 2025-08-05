@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const photoUrl = "https://jsonplaceholder.typicode.com/photos";
+
 const getPhotos = async () => {
   try {
     const res = axios.get(photoUrl);
@@ -9,6 +10,7 @@ const getPhotos = async () => {
     console.log(error);
   }
 };
+
 const getPhoto = async id => {
   try {
     const res = axios.get(`${photoUrl}/${id}`);
@@ -17,6 +19,7 @@ const getPhoto = async id => {
     console.log(error);
   }
 };
+
 const postPhoto = async data => {
   try {
     const res = axios.post(photoUrl, data);
@@ -25,6 +28,7 @@ const postPhoto = async data => {
     console.log(error);
   }
 };
+
 const deletePhoto = async id => {
   try {
     const res = axios.delete(`${photoUrl}/${id}`);
@@ -33,6 +37,7 @@ const deletePhoto = async id => {
     console.log(error);
   }
 };
+
 const putPhoto = async (id, data) => {
   try {
     const res = axios.put(`${photoUrl}/${id}`, data);
@@ -41,6 +46,7 @@ const putPhoto = async (id, data) => {
     console.log(error);
   }
 };
+
 const patchPhoto = async (id, {}) => {
   try {
     const res = axios.patch(`${photoUrl}/${id}`, {});
