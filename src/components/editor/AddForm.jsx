@@ -13,6 +13,7 @@ const AddForm = () => {
   const quillRef = useRef(null);
 
   // 이미지 처리 3. 사용자가 이미지 선택시 개발자가 직접 처리
+
   // 이미지 처리(프론트에서 처리)
   const imageHandler = () => {
     //console.log("이미지 처리하기");
